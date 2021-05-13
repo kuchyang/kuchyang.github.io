@@ -21,7 +21,7 @@ a{color:#F31625;text-decoration:none;/*隱藏連結底線*/}a:hover{text-decorat
 
 ul.sidenav {/*導航欄*/
   list-style-type: none;
-  margin: 0; padding: 0; width: 20%;/*導航欄寬(邊界)*/
+  margin: 0; padding: 0; width: 22%;/*導航欄寬(邊界)*/
   background-color: #4C679A;
   position: fixed; height: 100%; overflow: auto;
 }
@@ -34,7 +34,7 @@ ul.sidenav li a:hover{/*鼠標移到上方時更改背景色*/
 }
 
 div.content {/*內容*/
-  margin-left: 20%;/*導航欄寬(邊界)*/
+  margin-left: 22%;/*導航欄寬(邊界)*/
   padding: 1px 16px; height: 1000px;
 }
 
