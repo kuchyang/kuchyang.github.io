@@ -1,59 +1,67 @@
-.Block_Orchid-blue {/*蘭色背景 白色文字*/
-  background-color: #0099ff;
-  color: #ffffff;
-}
-.Bar-top, .Bar-bottom{position:fixed;/*固定在相同的位置*/width:100%;/*z-index:1;/*設定區塊的 z軸位置*/} .Bar-top{top:0;} .Bar-bottom{bottom:0;}
-.Navigation_Bar {
-  /*background-color: #0099ff; color: #ffffff;*/
-  /*padding:15px;*/ /*float:left;*/ 
-  text-align: center;
-  width: 100%; /*寬度默認為..％ */
-  
-}
+.Block_Color{/*淺黃#F5F2D6 黃#FFEB0A 夜青#4C679A 紅#EA202C 夜#0C2045*/}
+
 .Abstract {
-  background-color: #e6ffff;/*Light Cyan 淺青色*/
-  color: #000d1a;
+  /*background-color: #e6ffff;color: #000d1a;*/
   border: 0px solid black; margin: 10px; padding: 10px;
   font-size: 18px;
 }
 
 body {
-  background-color: #F0FFFF; /*Azure-blue*/
+  background-color:#F5F2D6;color:#0C2045;
   font-family: Arial, sans-serif; /*字型*/
   margin: 0;
+}h1 {/*標題*/ text-align: center;}
+footer {/* 尾腳 */
+  /*padding: 5px;text-align: center;*/
+  font-size: 10px; padding:1px 14px;
+  background-color:#0C2045;color:#FFEB0A;
 }
 
-h1 {/*標題*/ text-align: center;}
+a{color:#F31625;text-decoration:none;/*隱藏連結底線*/}a:hover{text-decoration:underline;/*滑鼠移經時顯示底線*/}
 
-footer {/* Style the footer */
-  /*background-color: #0099ff; color: #ffffff;*/
-  padding: 5px;
-  /*text-align: center;*/
-  font-size: 10px;
+ul.sidenav {/*導航欄*/
+  list-style-type: none;
+  margin: 0; padding: 0; width: 20%;/*導航欄寬(邊界)*/
+  background-color: #4C679A;
+  position: fixed; height: 100%; overflow: auto;
+}
+ul.sidenav li a {
+  display: block;/*指定填充*/ color: #FFEB0A;
+  padding: 10px 16px; text-decoration: none;
+}
+ul.sidenav li a:hover{/*鼠標移到上方時更改背景色*/
+  background-color: #0C2045; color: white;
+}
+
+div.content {/*內容*/
+  margin-left: 20%;/*導航欄寬(邊界)*/
+  padding: 1px 16px; height: 1000px;
+}
+
+@media screen and (max-width:900px) {/*屏幕<900px,導航欄轉為頂部*/
+  ul.sidenav {width: 100%; height: auto; position: relative; }
+  ul.sidenav li a {float: left; padding: 15px; }
+  div.content {margin-left: 0;}
+}
+@media screen and (max-width:400px) {/*屏幕<400px,導航欄垂直堆疊*/
+  ul.sidenav li a {text-align: center; float: none; }
 }
 
 
 
-ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden;
-  background-color: #0099ff;
-  position: fixed; top: 0; width: 100%;/*使導航欄保持在頁面頂部*/
-}
-li { float: left;/*使彼此相鄰滑動*/ border-right: 1px solid #bbb;/*創建分隔符*/}
-li a { display: block;/*允許我們指定填充*/ color: white;
-  text-align: center; padding: 8px 16px;
-  text-decoration: none;
-}
-li a:hover { background-color: #111;}
 
 
+
+
+
+
+/*
 .embed-container { 
   position: relative; 
-  padding-bottom: 56.25%; /*長寬比*/
-  height: 0; 
-  overflow: hidden; max-width: 100%; 
+  padding-bottom: 56.25%; 長寬比
+  height: 0;  overflow: hidden; max-width: 100%; 
 } 
 .embed-container iframe, .embed-container object, .embed-container embed { 
   position: absolute; 
-  top: 0; left: 0; 
-  width: 100%; height: 100%; 
-}
+  top: 0; left: 0;  width: 100%; height: 100%; 
+}*/
